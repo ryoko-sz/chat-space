@@ -1,0 +1,56 @@
+.wrapper
+
+  = render 'shared/side_bar'
+
+  .chat
+    .header
+      .left-header
+        .left-header__title
+          group
+        %ul.left-header__members
+          Member：
+          %li.member
+            cast
+          %li.member
+            cast
+          %li.member
+            cast
+      .right-header
+        .right-header__button
+          Edit
+    .messages
+      .message
+        .upper-message
+          .upper-message__user-name
+            cast
+          .upper-message__date
+            2020/05/14(Thu) 23:38:25
+        .lower-meesage
+          .lower-message__content
+            message
+      .message
+        .upper-message
+          .upper-message__user-name
+            cast
+          .upper-message__date
+            2020/05/14(Thu) 23:38:25
+        .lower-meesage
+          .lower-message__content
+            message
+      .message
+        .upper-message
+          .upper-message__user-name
+            cast
+          .upper-message__date
+            2020/05/14(Thu) 23:38:25
+        .lower-meesage
+          .lower-message__content
+            message
+    .form
+      %form
+        %input.form__message{placeholder: 'type a message'}
+        .form__mask
+          %label.form__mask__image
+            = icon('fa','image',class: 'icon')
+            %input.hidden{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}                
